@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <syle rel="stylesheet" href="assets/css/style.index.css"></syle>
+    <link rel="stylesheet" href="assets/css/style.index.css"></syle>
     <script src="assets/js/script.index.js"></script>
     <title>Agenda Telefônica</title>
 </head>
 <body>
     <h1>Agenda Telefônica</h1>
 
-    <div id="main-div">
+<div id="input-container">
 
     <input type="text" id="name" placeholder="Nome Completo" required>
 
-    <input type="number" id="phone" placeholder="Telefone Fixo" required>
+    <input type="text" id="phone" maxlength="11" placeholder="Telefone Fixo" required>
 
-    <input type="number" id="cellphone" placeholder="Telefone Celular" required>
+    <input type="text" id="cellphone" maxlength="11" placeholder="Telefone Celular" required>
 
     <input type="text" id="picture" placeholder="URL da Foto" required>
 
@@ -26,14 +26,25 @@
 
     <input type="number" id="cep" placeholder="CEP" required>
 
-    <input type="text" id="adress" placeholder="Cidade" required>
+    <input type="text" id="address" placeholder="Cidade" required>
 
     <input type="text" id="instagram" placeholder="@Instagram" required>
 
     <input type="text" id="git" placeholder="@Github" required>
     
-    </div>
-    <button>Adcionar Contato</button>
+    <button onclick="addContact()">Adcionar Contato</button>
+
+</div>
+<div id ="message">
+      
+</div>
+
+<div id="list">
+
+</div>
+<div id="list2" class="hidden">
+
+</div>
     
 </body>
 </html>
